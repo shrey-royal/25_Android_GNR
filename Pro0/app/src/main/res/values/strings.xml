@@ -1,4 +1,34 @@
 <resources>
     <string name="app_name">Pro0</string>
     <string name="myname">Hello Shrey!</string>
+    <string-array name="coffee_types">
+        <item>Espresso</item>
+        <item>Cappuccino</item>
+        <item>Latte</item>
+        <item>Americano</item>
+        <item>Mocha</item>
+    </string-array>
+
+    <string-array name="bean_types">
+        <item>Arabica</item>
+        <item>Robusta</item>
+        <item>Liberica</item>
+        <item>Excelsa</item>
+    </string-array>
+
+    <string-array name="milk_options">
+        <item>Whole Milk</item>
+        <item>Soy Milk</item>
+        <item>Almond Milk</item>
+        <item>Oat Milk</item>
+        <item>No Milk</item>
+    </string-array>
+
+    <string-array name="sugar_levels">
+        <item>No Sugar</item>
+        <item>1 Spoon</item>
+        <item>2 Spoons</item>
+        <item>3 Spoons</item>
+        <item>Extra Sweet</item>
+    </string-array>
 </resources>

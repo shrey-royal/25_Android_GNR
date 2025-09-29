@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1C1B1A"
+    android:padding="24dp"
+    tools:context=".RelativeLayout">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coffee Order Form"
+        android:textSize="24sp"
+        android:textColor="#F5F3F0"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+
+    <!-- Name Field -->
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Name"
+        android:inputType="textPersonName"
+        android:textColor="#F5F3F0"
+        android:textColorHint="#9E9D9C"
+        android:background="@android:color/transparent"
+        android:padding="12dp"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="32dp"
+        android:drawableStart="@android:drawable/ic_menu_edit"
+        android:drawablePadding="12dp"
+        android:fontFamily="@font/poppins_regular"/>
+
+    <!-- Coffee Type Spinner -->
+    <Spinner
+        android:id="@+id/spCoffeeType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etName"
+        android:layout_marginTop="24dp"
+        android:background="#C7A17A"
+        android:popupBackground="#F8F1E7"
+        android:entries="@array/coffee_types"/>
+
+    <!-- Bean Type Spinner -->
+    <Spinner
+        android:id="@+id/spBeanType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spCoffeeType"
+        android:layout_marginTop="24dp"
+        android:background="#C7A17A"
+        android:popupBackground="#F8F1E7"
+        android:entries="@array/bean_types"/>
+
+    <!-- Milk Options Spinner -->
+    <Spinner
+        android:id="@+id/spMilk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spBeanType"
+        android:layout_marginTop="24dp"
+        android:background="#C7A17A"
+        android:popupBackground="#F8F1E7"
+        android:entries="@array/milk_options"/>
+
+    <!-- Sugar Options Spinner -->
+    <Spinner
+        android:id="@+id/spSugar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spMilk"
+        android:layout_marginTop="24dp"
+        android:background="#C7A17A"
+        android:popupBackground="#F8F1E7"
+        android:entries="@array/sugar_levels"/>
+
+    <!-- Special Instructions -->
+    <EditText
+        android:id="@+id/etInstructions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Special Instructions (Optional)"
+        android:textColor="#F5F3F0"
+        android:textColorHint="#9E9D9C"
+        android:background="@android:color/transparent"
+        android:padding="12dp"
+        android:layout_below="@id/spSugar"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/poppins_regular"
+        android:lines="3"
+        android:gravity="top"
+        android:inputType="textMultiLine"/>
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Place Order"
+        android:layout_below="@id/etInstructions"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#C7A17A"
+        android:textColor="#1C1B1A"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins_medium"
+        android:drawablePadding="12dp"/>
+
+</RelativeLayout>
