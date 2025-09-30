@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Pro0">
         <activity
-            android:name=".RelativeLayout"
+            android:name=".Layouts"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
