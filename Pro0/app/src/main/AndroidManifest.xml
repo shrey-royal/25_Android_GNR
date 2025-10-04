@@ -12,13 +12,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Pro0">
         <activity
-            android:name=".DataFlow"
+            android:name=".CustomComponents"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".DataFlow"
+            android:exported="false">
         </activity>
         <activity
             android:name=".Layouts"
