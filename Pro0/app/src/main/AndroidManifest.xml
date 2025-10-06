@@ -12,7 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Pro0">
         <activity
-            android:name=".CustomComponents"
+            android:name=".DisplayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FormSubmitIntent0"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,9 +24,23 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".DataFlow"
-            android:exported="false">
+            android:name=".IntentActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
+        <activity
+            android:name=".ActivityLifecycle"
+            android:exported="false" />
+        <activity
+            android:name=".CustomComponents"
+            android:exported="false" />
+        <activity
+            android:name=".DataFlow"
+            android:exported="false" />
         <activity
             android:name=".Layouts"
             android:exported="false" />
